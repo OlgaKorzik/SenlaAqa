@@ -3,6 +3,8 @@ package eu.senla.locators;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import static eu.senla.locators.MyLocators.*;
+
 public class PagesBehaviour extends BasePage {
 
     public PagesBehaviour(WebDriver driver) {
@@ -19,16 +21,16 @@ public class PagesBehaviour extends BasePage {
     }
 
     public void login(String login, String password) {
-        inputField(MyLocators.LOGIN_INPUT, login);
-        inputField(MyLocators.PASSWORD_INPUT, password);
-        click(MyLocators.SUBMIT_BUTTON);
+        inputField(LOGIN_INPUT, login);
+        inputField(PASSWORD_INPUT, password);
+        click(SUBMIT_BUTTON);
     }
 
     public void logout() {
-        click(MyLocators.SING_OUT_BUTTON);
+        click(SING_OUT_BUTTON);
     }
 
     public String getCurrentUserName() {
-        return driver.findElement(MyLocators.CURRENT_USER).getText();
+        return driver.findElement(CURRENT_USER).getText();
     }
 }
