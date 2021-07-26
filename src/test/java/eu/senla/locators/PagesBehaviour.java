@@ -1,8 +1,13 @@
 package eu.senla.locators;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
 public class PagesBehaviour extends BasePage {
+
+    public PagesBehaviour(WebDriver driver) {
+        super(driver);
+    }
 
     public PagesBehaviour inputField(By element, String value) {
         driver.findElement(element).sendKeys(value);
@@ -21,5 +26,9 @@ public class PagesBehaviour extends BasePage {
 
     public void logout() {
         click(MyLocators.SING_OUT_BUTTON);
+    }
+
+    public String getCurrentUserName() {
+        return driver.findElement(MyLocators.CURRENT_USER).getText();
     }
 }

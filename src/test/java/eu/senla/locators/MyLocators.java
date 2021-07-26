@@ -13,4 +13,5 @@ public class MyLocators {
     public static final By FIRST_NAME = By.id("address_first_name");
 
     public static final By SING_OUT_BUTTON = By.xpath("//a[@data-test = 'sign-out']");
+    public static final By CURRENT_USER = By.xpath("//span[@data-test = 'current-user']");
 }

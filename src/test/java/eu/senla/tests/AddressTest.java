@@ -1,18 +1,16 @@
 package eu.senla.tests;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Order;
+import eu.senla.utils.IConstants;
+import org.junit.jupiter.api.*;
 
 import static eu.senla.locators.MyLocators.*;
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class AddressTest extends BeforeTest {
 
-    @BeforeClass
+    @BeforeEach
     public void login() {
-        pagesBehaviour.login("", "");
+        pagesBehaviour.login(IConstants.email, IConstants.password);
     }
 
     @Test
@@ -31,7 +29,7 @@ public class AddressTest extends BeforeTest {
         driver.findElement(NEW_ADDRESS_LINK).click();
     }
 
-    @AfterClass
+    @AfterEach
     public void logout() {
         pagesBehaviour.logout();
     }
