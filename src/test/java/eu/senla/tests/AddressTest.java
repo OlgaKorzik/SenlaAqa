@@ -50,8 +50,8 @@ public class AddressTest extends BeforeTest {
 
 
     }
-   @Ignore
-    @Test
+
+   @Test
     @DisplayName("Check to changing of address data")
     @Order(2)
     public void changeAddressTest() {

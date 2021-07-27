@@ -2,6 +2,7 @@ package eu.senla.tests;
 
 import eu.senla.utils.IConstants;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
@@ -16,6 +17,12 @@ public class LoginTest extends BeforeTest {
         pagesBehaviour.login(IConstants.email, IConstants.password);
         String actual = pagesBehaviour.getCurrentUserName();
         assertEquals(actual, IConstants.email, "User has not logged in");
+    }
+    @Test
+    public void LoginOut(){
+        pagesBehaviour.logout();
+        String title = driver.getTitle();
+        Assertions.assertTrue("Address Book - Sign In".contains(title), "Don't sign in");
     }
 
 }
