@@ -39,4 +39,5 @@ public class MyLocators {
     public static final By LAST_ELEMENT_TABLE = By.xpath("//tbody/tr[last()]/td[1]");
     public static final By SECOND_ELEMENT_TABLE = By.xpath("//tbody/tr[1]/td[2]");
     public static final By SIZE_TABLE = By.xpath(".//table/tbody/tr");
+
 }
