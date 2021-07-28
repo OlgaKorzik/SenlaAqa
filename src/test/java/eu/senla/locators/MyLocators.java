@@ -9,7 +9,7 @@ public class MyLocators {
     public static final By SUBMIT_BUTTON = By.name("commit");
 
     public static final By ADDRESS_TAB = By.xpath("//a[@data-test = 'addresses']");
-    public static final By NEW_ADDRESS_LINK = By.cssSelector("a[data-test = \"create\"]");
+    public static final By NEW_ADDRESS_LINK = By.xpath("//a[@data-test = 'create']");
     public static final By FIRST_NAME = By.id("address_first_name");
     public static final By LAST_NAME = By.xpath("//input[@id = 'address_last_name']");
     public static final By FIRST_ADDRESS = By.name("address[address1]");

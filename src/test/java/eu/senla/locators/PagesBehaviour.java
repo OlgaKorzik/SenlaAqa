@@ -2,6 +2,7 @@ package eu.senla.locators;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
 import static eu.senla.locators.MyLocators.*;
 
 public class PagesBehaviour extends BasePage {
@@ -14,7 +15,8 @@ public class PagesBehaviour extends BasePage {
         driver.findElement(element).sendKeys(value);
         return this;
     }
-    public void clearElement(By element){
+
+    public void clearElement(By element) {
         driver.findElement(element).clear();
     }
 
@@ -22,10 +24,11 @@ public class PagesBehaviour extends BasePage {
         driver.findElement(element).click();
     }
 
-    public void navigatePage(String url){
+    public void navigatePage(String url) {
         driver.navigate().to(url);
     }
-    public void switchTo(){
+
+    public void switchTo() {
         driver.switchTo().alert().accept();
     }
 
