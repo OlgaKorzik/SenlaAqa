@@ -11,7 +11,7 @@ public class MyLocators {
     public static final By ADDRESS_TAB = By.xpath("//a[@data-test = 'addresses']");
     public static final By NEW_ADDRESS_LINK = By.cssSelector("a[data-test = \"create\"]");
     public static final By FIRST_NAME = By.id("address_first_name");
-    public static final By LAST_NAME = By.id("address_last_name");
+    public static final By LAST_NAME = By.xpath("//input[@id = 'address_last_name']");
     public static final By FIRST_ADDRESS = By.name("address[address1]");
     public static final By LAST_ADDRESS = By.name("address[address2]");
     public static final By ADDRESS_CITY= By.name("address[city]");
@@ -30,7 +30,7 @@ public class MyLocators {
     public static final By ADDRESS_NOTE = By.id("address_note");
     public static final By CREATE_ADDRESS_BUTTON = By.xpath("//*[@id=\"new_address\"]/div[17]/input");
     public static final By BUTTON_LIST = By.xpath("/html/body/div/div[2]/a[2]");
-    public static final By BUTTON_EDIT = By.xpath("//tr[1]/td[6]/a");
+    public static final By BUTTON_EDIT = By.xpath("//a[contains(@data-test, 'edit')]");
     public static final By ADDRESS_EDIT_BUTTON = By.name("commit");
     public static final By BUTTON_DELETE = By.xpath("//tr/td[7]/a");
 
