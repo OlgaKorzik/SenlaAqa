@@ -39,7 +39,7 @@ public class AddressTest extends BeforeTest {
         pagesBehaviour.inputField(COLOR, "#0000FF");
         pagesBehaviour.inputField(ADDRESS_AGE, "25");
         pagesBehaviour.inputField(WEBSITE, "http://a.testaddressbook.com/addresses/new");
-        driver.findElement(PICTURE).sendKeys(System.getProperty("user.dir") + "/src/main/resources/img/naroch.jpeg");
+       // driver.findElement(PICTURE).sendKeys(System.getProperty("user.dir") + "/src/main/resources/img/naroch.jpeg");
         pagesBehaviour.inputField(PHONE, "+375-29-123-45-67");
         pagesBehaviour.click(INTEREST_READ);
         pagesBehaviour.inputField(ADDRESS_NOTE, "Friend");

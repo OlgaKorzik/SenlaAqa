@@ -20,7 +20,7 @@ public class Driver {
 
     public static WebDriver getDriver(){
         initializeChromeDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
         return driver;
     }
 }
